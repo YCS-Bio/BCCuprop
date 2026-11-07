@@ -7,11 +7,11 @@ Sys.setenv(LANGUAGE = "en")
 options(stringsAsFactors = FALSE)
 #清空环境
 rm(list=ls())
-setwd("D:/BioInf/expl")
-workDir <- "D:/BioInf/expl"
+setwd("D:/ML_REO/split0221")
+workDir <- 'D:/ML_REO/split0221'
 library(survival)
 library(survminer)
-clusterFile="prediction.txt"
+clusterFile="Cup6-2.txt"
 cliFile="time.txt"
 cluster=read.table(clusterFile, header=T, sep="\t", check.names=F, row.names=1)
 rownames(cluster)=gsub("(.*?)\\_(.*?)", "\\2", rownames(cluster))
